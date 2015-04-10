@@ -29,4 +29,8 @@
 	
 ###Define API Rules and Methods
 - [ ] Ability to submit skew ratios for stats
-- [ ] Select pre-define skews
+	- [ ] Based on...
+		- [ ] User defined
+		- [ ] Class
+		- [ ] Alignment
+		- [ ] Other pre-defined skews...
