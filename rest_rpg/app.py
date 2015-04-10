@@ -16,7 +16,7 @@ def create_app(config_object=Production):
     app = Flask(__name__)
     app.config.from_object(config_object)
     register_extensions(app)
-    register_admin(Example, session=db.session)
+    register_admin_models(Example, session=db.session)
 
     # admin requires a custom setup
     admin_views()
@@ -37,7 +37,7 @@ def register_extensions(app):
     return None
 
 
-def register_admin(*args, **kwargs):
+def register_admin_models(*args, **kwargs):
     """
     Takes in any number of unnamed args assuming they're database model classes
     and registers them with the SuperAdmin
