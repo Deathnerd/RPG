@@ -7,5 +7,14 @@
 	- [ ] Warrior
 	- [ ] Priest
 	- etc
-		
-###Define API Rules
+- [ ] Weapon Randomizer
+- [ ] Base Stats
+	- [ ] Health
+	- [ ] Magicka Points
+	- [ ] Intelligence
+	- [ ] Defense
+	- [ ] Constitution
+	- [ ] Endurance
+	- [ ] Cunning
+	
+###Define API Rules and Methods
