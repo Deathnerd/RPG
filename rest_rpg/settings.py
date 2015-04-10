@@ -3,6 +3,7 @@ import os
 
 
 class Base():
+	"""Base Config"""
 	SECRET_KEY = "S00pp3rS3cr3t"
 	APP_DIR = os.path.abspath(os.path.dirname(__file__))
 	PROJECT_ROOT = os.path.abspath(os.path.join(APP_DIR, os.pardir))
@@ -27,6 +28,7 @@ class Development(Base):
 
 
 class Staging(Base):
+	"""Staging Config"""
 	TESTING = True
 	DEBUG = True
 	BCRYPT_LOG_ROUNDS = 1

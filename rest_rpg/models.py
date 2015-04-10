@@ -8,9 +8,9 @@ class Example(db.Model):
 	name = db.Column(db.String(80), unique=True)
 	value = db.Column(db.String(100), nullable=False)
 
-	def __init__(self, key, value, *args, **kwargs):
-		self.key = key
-		self.value = value
+	def __init__(self, **kwargs):
+		for key, value in kwargs:
+			setattr(self, key, value)
 
 	def __repr__(self):
-		return "<Example {name}:{value}>".format(name=self.name, value=self.value)
+		return "{name}:{value}".format(name=self.name, value=self.value)
