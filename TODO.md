@@ -33,4 +33,5 @@
 		- [ ] User defined
 		- [ ] Class
 		- [ ] Alignment
+		- [ ] Game (not in initial relase)
 		- [ ] Other pre-defined skews...
