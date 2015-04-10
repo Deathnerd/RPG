@@ -1,0 +1,37 @@
+###Create Models
+- [ ] Base Player Model
+- [ ] Classes
+	- [ ] Wizard
+	- [ ] Mage
+	- [ ] Druid
+	- [ ] Warrior
+	- [ ] Priest
+	- etc
+- [ ] Weapon Randomizer
+- [ ] Base Stats
+	- [ ] Health
+	- [ ] Magicka Points
+	- [ ] Intelligence
+	- [ ] Defense
+	- [ ] Constitution
+	- [ ] Endurance
+	- [ ] Cunning
+- [ ] Moral Alignment
+	- [ ] Lawful Good
+	- [ ] Neutral Good
+	- [ ] Chaotic Good
+	- [ ] Lawful Neutral
+	- [ ] Neutral
+	- [ ] Chaotic Neutral
+	- [ ] Lawful Evil
+	- [ ] Neutral Evil
+	- [ ] Chaotic Evil
+	
+###Define API Rules and Methods
+- [ ] Ability to submit skew ratios for stats
+	- [ ] Based on...
+		- [ ] User defined
+		- [ ] Class
+		- [ ] Alignment
+		- [ ] Game (not in initial relase)
+		- [ ] Other pre-defined skews...
