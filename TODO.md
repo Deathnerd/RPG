@@ -16,5 +16,17 @@
 	- [ ] Constitution
 	- [ ] Endurance
 	- [ ] Cunning
+- [ ] Moral Alignment
+	- [ ] Lawful Good
+	- [ ] Neutral Good
+	- [ ] Chaotic Good
+	- [ ] Lawful Neutral
+	- [ ] Neutral
+	- [ ] Chaotic Neutral
+	- [ ] Lawful Evil
+	- [ ] Neutral Evil
+	- [ ] Chaotic Evil
 	
 ###Define API Rules and Methods
+- [ ] Ability to submit skew ratios for stats
+- [ ] Select pre-define skews
