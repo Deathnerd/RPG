@@ -1,9 +1,11 @@
-import os, sys, subprocess
 from flask.ext.script import Manager, Shell, Server
 from flask.ext.migrate import MigrateCommand
+
+import os
 from rest_rpg.app import create_app, db
 from rest_rpg.settings import Production, Development, Staging
-from rest_rpg.models import Example
+from rest_rpg.api.models import Example
+
 
 if os.environ.get("REST_RPG_ENV") == "prod":
     app = create_app(Production)

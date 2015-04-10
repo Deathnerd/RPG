@@ -1,8 +1,9 @@
 from flask import Flask
-from .settings import Production
-from flask.ext.superadmin import model
-from .extensions import bcrypt, db, migrate, debug_toolbar, admin
-from .models import Example
+
+from rest_rpg.settings import Production
+from rest_rpg.extensions import bcrypt, db, migrate, debug_toolbar, admin
+from rest_rpg.api.models import Example
+from rest_rpg.api import api
 
 
 def create_app(config_object=Production):
@@ -17,6 +18,7 @@ def create_app(config_object=Production):
     app.config.from_object(config_object)
     register_extensions(app)
     register_admin_models(Example, session=db.session)
+    register_blueprints(app)
 
     # admin requires a custom setup
     admin_views()
@@ -49,8 +51,10 @@ def register_admin_models(*args, **kwargs):
 
 
 def admin_views():
-    from .admin import views
     # admin.add_view(views.MyView(name="Hello 1", endpoint="test1", category="Test"))
-    # admin.add_view(views.MyView(name="Hello 2", endpoint="test2", category="Test"))
-    # admin.add_view(views.MyView(name="Hello 3", endpoint="test3", category="Test"))
+    return None
+
+
+def register_blueprints(app):
+    app.register_blueprint(api, url_prefix="/api")
     return None

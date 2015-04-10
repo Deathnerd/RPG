@@ -1,4 +1,4 @@
-from .app import db
+from rest_rpg.app import db
 
 
 class Example(db.Model):
